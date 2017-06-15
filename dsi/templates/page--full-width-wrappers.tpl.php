@@ -308,6 +308,9 @@ if(isset($section_title)){
 
     <div id="content-wrapper"><div class="container">
       <div id="columns"><div class="columns-inner clearfix">
+        
+        <?php print render($page['content_nav']); ?>       
+        
         <div id="content-column"><div class="content-inner">
 
           <?php print render($page['highlighted']); ?>

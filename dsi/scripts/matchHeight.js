@@ -10,6 +10,9 @@
         $('.square-grid article h2.node-title a').matchHeight({   
             byRow: false
         });
+        $('.square-grid article .group-bottom-grid').matchHeight({   
+            byRow: false
+        });
         $('.people-grid .views-field-field-person-image').matchHeight({           
             byRow: false
         });

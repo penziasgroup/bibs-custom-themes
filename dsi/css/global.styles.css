@@ -685,15 +685,18 @@ ul.action-links {
 }
 
 /* line 1101, ../sass/global.styles.scss */
+.field-name-field-additional-reading .field-item,
 .field-type-taxonomy-term-reference.field-label-inline .field-item {
   display: inline;
   list-style: none;
   padding: 0;
   line-height: 32px;
 }
+.field-name-field-additional-reading .field-item:after,
 .field-type-taxonomy-term-reference.field-label-inline .field-item:after{
     content: ', ';
 }
+.field-name-field-additional-reading .field-item:last-child:after,
 .field-type-taxonomy-term-reference.field-label-inline .field-item:last-child:after{
     content: '';
 }
@@ -1326,13 +1329,16 @@ article,
 #content .block-menu-block{
     
 }
-
+.region-content-nav .block{
+    margin-bottom: 35px;
+}
 .sidebar-first #content-column .content-inner{
     padding-left: 35px;
 }
 
 .region-sidebar-first .block-menu-block ul.menu,
-#content .block-menu-block ul.menu{
+#content .block-menu-block ul.menu,
+.region-content-nav .block-menu-block ul.menu{
     padding: 0;
     margin: 0;
 }
@@ -1342,26 +1348,32 @@ article,
     padding: 0;
     margin-bottom: 5px;
 }
-
-#content .block-menu-block ul.menu li{
+.region-content-nav .block-menu-block ul.menu li{
+    padding-right: .5em;
+}
+#content .block-menu-block ul.menu li,
+.region-content-nav .block-menu-block ul.menu li{
     display: inline-block;
     box-sizing: border-box;
     text-align: center;
 }
-#content .block-menu-block ul.menu li:last-child{
+#content .block-menu-block ul.menu li:last-child,
+.region-content-nav .block-menu-block ul.menu li:last-child{
     padding-right: 0;
 }
+.view-undergraduates .more-link a,
 .field-name-field-big-link a,
-#content .block-menu-block ul.menu li a{
+#content .block-menu-block ul.menu li a,
+.region-content-nav .block-menu-block ul.menu li a{
     display: block;
-    background: #262626;
+    background: #000;
     color: #FFF;
     padding: 1.4vw;
     font-size: 2.1vw;
 }
 .region-sidebar-first .block-menu-block ul.menu a{
     display: block;
-    background: #262626;
+    background: #000;
     color: #FFF;
     padding: 20px;
     font-size: 16px;
@@ -1370,14 +1382,18 @@ article,
 .section-about #content .block-menu-block ul.menu li a{
     font-size: 1.85vw;
 }
+.view-undergraduates .more-link a,
 .field-name-field-big-link a{
     text-align: center;
 }
+.view-undergraduates .more-link a:hover,
 .region-sidebar-first .block-menu-block ul.menu a:hover,
 .region-sidebar-first .block-menu-block ul.menu a.active,
 .field-name-field-big-link a:hover,
 #content .block-menu-block ul.menu li a:hover,
-#content .block-menu-block ul.menu li a.active{
+#content .block-menu-block ul.menu li a.active,
+.region-content-nav .block-menu-block ul.menu li a:hover,
+.region-content-nav .block-menu-block ul.menu li a.active{
     color: #ed1c24;
 }
 .section-academic-programs #content .block-menu-block{
@@ -1397,6 +1413,7 @@ article,
     margin-top: 20px;
 }
 #content .block-menu-block ul.menu li,
+.region-content-nav .block-menu-block ul.menu li,
 .section-research #content .block-menu-block ul.menu li{
     width: 33.33%;
 }
@@ -1726,19 +1743,28 @@ h1#page-title .section-title{
 
 /* Core Deptartments */
 
+#block-views-core-departments-block{
+    margin-top: 35px;
+}
+
+.node-core-department.node-teaser .field-name-field-dept-image img{
+    vertical-align: bottom;
+}
+
 .node-core-department.node-teaser .field-name-field-dept-image,
 .node-core-department.node-teaser .group-dept-info{
     display: table-cell;
     vertical-align: top;
 }
 .node-core-department.node-teaser .field-name-field-dept-image{
-    width: 340px;
+    width: 220px;
     padding-right: 30px;
 }
 
 .core-dept-list .views-row{
-    border-top: 2px solid #ed1c24;
     margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ffc72c;
 }
 
 .node-core-department.node-teaser .group-dept-info{
@@ -1749,9 +1775,14 @@ h1#page-title .section-title{
     font-size: 36px;
     line-height: 44px;
     font-family: opensans-semi;
-    margin: 15px 0;
+    margin: 0 0 15px;
 }
-
+.node-core-department.node-teaser .field-name-field-dept-website{
+    font-size: 18px;
+    font-family: opensans-semi;
+    font-weight: normal;
+    margin-top: 30px;
+}
 .group-dept-head .field-name-field-dept-head-name .field-item:after{
     content: ', ';
 }
@@ -1942,7 +1973,11 @@ span.addeventatc_icon.atc_node{
 }
 
 /* Affliated Grid & Research Grid */
-
+.square-grid .view-content:after{
+    content: '';
+    display: block;
+    clear: both;
+}
 .square-grid .views-row{
     float: left;
     width: 25%;
@@ -1951,9 +1986,15 @@ span.addeventatc_icon.atc_node{
     padding-right: 8px;
     margin-bottom: 8px;
 }
+.square-grid.three-grid .views-row{
+    width: 33.33%;
+}
 .square-grid .views-row img{
     display: block;
+    width: 100%;
+    vertical-align: bottom;
 }
+.square-grid .group-bottom-grid,
 .square-grid h2.node-title a{
     display: block;
     color: #FFF;

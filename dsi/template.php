@@ -57,6 +57,11 @@ function dsi_process_html(&$vars) {
 function dsi_preprocess_page(&$vars) {
     drupal_add_js('jQuery.extend(Drupal.settings, { "pathToTheme": "' . file_create_url(path_to_theme()) . '" });', 'inline'); 
     
+    $alias = drupal_get_path_alias();
+    if(isset($alias)){
+        $alias = explode('/', $alias);
+    }
+    
     if(isset($vars['node']) && $vars['node']->type == 'event'){
        drupal_set_title('');
     }
@@ -66,17 +71,14 @@ function dsi_preprocess_page(&$vars) {
     if(isset($vars['node']) && $vars['node']->type == 'research'){
        drupal_set_title('Research Projects');
     }
+    if(isset($vars['node']) && $alias[0] == 'training' && $alias[1] == 'postdocs'){
+       drupal_set_title('Postdocs');
+    }
     if(isset($vars['node']) && $vars['node']->type == 'person'){
         $person_term = $vars['node']->field_person_type[LANGUAGE_NONE][0]['tid'];
         $term = taxonomy_term_load($person_term);
         $name = $term->name;
         drupal_set_title('People: ' . $name);
-    }
-    
-    $current_path = explode('/', drupal_get_path_alias());
-
-    if(isset($vars['node']) && $current_path[0] == 'academic-programs' && isset($current_path[1])){
-        drupal_set_title("Master's in Data Science");
     }
 }
 /* -- Delete this line if you want to use these functions
@@ -128,6 +130,9 @@ function dsi_preprocess_node(&$vars) {
         'research_lead',
         'tool',
         'funding',
+        'brain_factor',
+        'training_card',
+        'undergraduate',
     );
     if ((in_array($vars['type'],$no_titles)) && ($vars['view_mode'] == 'teaser' || $vars['view_mode'] == 'feature_card')){
         $vars['title']='';

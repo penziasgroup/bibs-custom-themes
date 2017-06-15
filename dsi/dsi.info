@@ -84,7 +84,7 @@
     scripts[] = scripts/ate.min.js  
 
 ;----------// Regions
-
+  regions[content_nav]       = Content Top Nav  
   regions[content]           = Main Content
   regions[sidebar_first]     = Left Sidebar
   regions[highlighted]       = Highlighted
