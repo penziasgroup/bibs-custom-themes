@@ -125,3 +125,6 @@
     line-height: 1.5;
     padding-top: 35px;
 }
+#side-menu-wrapper ul.menu .no-mobile{
+    display: none;
+}

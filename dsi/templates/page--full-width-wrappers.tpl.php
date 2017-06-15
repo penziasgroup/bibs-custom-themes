@@ -106,13 +106,6 @@
 
 // Helper tasks
 
-$background_style = '';
-
-if(isset($header_image_path)){
-    $background_url = 'url(' . $header_image_path . ')';
-    $background_style = 'style="background-image:' . $background_url . '"';
-}
-
 if(isset($section_title)){
     $title = '<span class="section">' . $section_title . '</span> ' . '<span class="section-title">' . $title . '</span>';
 }elseif (!empty($title)){
@@ -257,7 +250,14 @@ if(isset($section_title)){
         </header>
       </div>
     </div>
-
+    <?php if ($page['primary_menu']): ?>
+      <div id="primary-menu-wrapper">
+        <div class="container clearfix">
+          <?php print render($page['primary_menu']); ?>
+        </div>
+      </div>
+    <?php endif; ?>
+      
     <?php if ($page['side_menu']): ?>
       <div id="side-menu-wrapper">
         <div class="container clearfix">
@@ -269,7 +269,7 @@ if(isset($section_title)){
     <?php print render($title_prefix); ?>
 
     <?php if ($title || $primary_local_tasks || $secondary_local_tasks || $action_links = render($action_links)): ?>
-        <header<?php print $content_header_attributes; ?><?php print $background_style; ?>>
+        <header<?php print $content_header_attributes; ?>>
 
         <div class="title-wrap">
             <?php if ($title): ?>

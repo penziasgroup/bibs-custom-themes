@@ -62,8 +62,11 @@ function dsi_preprocess_page(&$vars) {
         $alias = explode('/', $alias);
     }
     
-    if(isset($vars['node']) && $vars['node']->type == 'event'){
+    if(isset($vars['node']) && ($vars['node']->type == 'event' || $vars['node']->type == 'news')){
        drupal_set_title('');
+    }
+    if(isset($vars['node']) && $vars['node']->type == 'brain_factor'){
+       drupal_set_title('Brain Factor');
     }
     if(isset($vars['node']) && $vars['node']->type == 'tool'){
        drupal_set_title('Toolbox');
@@ -71,7 +74,7 @@ function dsi_preprocess_page(&$vars) {
     if(isset($vars['node']) && $vars['node']->type == 'research'){
        drupal_set_title('Research Projects');
     }
-    if(isset($vars['node']) && $alias[0] == 'training' && $alias[1] == 'postdocs'){
+    if((isset($vars['node']) && isset($alias[1])) && ($alias[0] == 'training' && $alias[1] == 'postdocs')){
        drupal_set_title('Postdocs');
     }
     if(isset($vars['node']) && $vars['node']->type == 'person'){
@@ -93,27 +96,26 @@ function dsi_process_page(&$vars) {
 
 function dsi_preprocess_node(&$vars) {
     if($vars['type'] == 'home_panel' && $vars['view_mode'] == 'teaser'){
-        $uri = $vars['field_panel_image'][LANGUAGE_NONE][0]['uri'];
+        
         /* For Image Styles 
          * $vars['panel_bg_path'] = image_style_url('home_panel_bg', $uri); 
          */
-        $vars['panel_bg_path'] = file_create_url($uri);
+            $panel_type = $vars['field_panel_type'][LANGUAGE_NONE][0]['value'];
+            $panel_type= strtolower(str_replace(' ','-',$panel_type));
+
+            if(!empty($vars['field_panel_size'])){
+                $size = $vars['field_panel_size'][LANGUAGE_NONE][0]['value'];
+                $size = strtolower(str_replace(' ','-',$size));
+                $vars['classes_array'][] = $size;
+            }
+            if(!empty($vars['field_panel_color'])){
+                $color = $vars['field_panel_color'][LANGUAGE_NONE][0]['value'];
+                $color = strtolower(str_replace(' ','-',$color));
+                $vars['classes_array'][] = $color;
+            }
+            $vars['classes_array'][] = t('home-panel');
+            $vars['classes_array'][] = $panel_type;
         
-        $panel_type = $vars['field_panel_type'][LANGUAGE_NONE][0]['value'];
-        $panel_type= strtolower(str_replace(' ','-',$panel_type));
-        
-        if(!empty($vars['field_panel_size'])){
-            $size = $vars['field_panel_size'][LANGUAGE_NONE][0]['value'];
-            $size = strtolower(str_replace(' ','-',$size));
-            $vars['classes_array'][] = $size;
-        }
-        if(!empty($vars['field_panel_color'])){
-            $color = $vars['field_panel_color'][LANGUAGE_NONE][0]['value'];
-            $color = strtolower(str_replace(' ','-',$color));
-            $vars['classes_array'][] = $color;
-        }
-        $vars['classes_array'][] = t('home-panel');
-        $vars['classes_array'][] = $panel_type;
     }
     if($vars['type'] == 'event' && ($vars['view_mode'] == 'default' || $vars['view_mode'] == 'full')){
         if(empty($vars['field_event_image'])){
@@ -133,10 +135,21 @@ function dsi_preprocess_node(&$vars) {
         'brain_factor',
         'training_card',
         'undergraduate',
+        'news',
+        'discover_cards',
+        'home_slide',
     );
-    if ((in_array($vars['type'],$no_titles)) && ($vars['view_mode'] == 'teaser' || $vars['view_mode'] == 'feature_card')){
+    if ((in_array($vars['type'],$no_titles)) && ($vars['view_mode'] == 'teaser' || $vars['view_mode'] == 'feature_card' || $vars['view_mode'] == 'bibs_now')){
         $vars['title']='';
     }
+    if($vars['view_mode'] == 'full' && $vars['type'] == 'news'){
+        if(!empty($vars['content']['field_news_video']) || !empty($vars['content']['field_news_slide_show'])){
+            unset($vars['elements']['#fieldgroups']['group_featured_image']);
+            hide($vars['content']['field_news_featured_image']);
+            hide($vars['content']['field_news_featured_caption']);
+        }
+    }
+    
 }
 function dsi_preprocess_views_view(&$vars) {
     if($vars['css_class'] == 'people-grid'){

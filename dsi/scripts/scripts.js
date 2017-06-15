@@ -48,6 +48,32 @@
             .jcarouselControl({
                 target: '+=1'
             });
+            
+            
+        /* Jquery Cycle for Paragraph slideshows */
+        if($('.field-name-field-news-slide-show > .field-items').children().length > 1){
+          $('.field-name-field-news-slide-show').once('slider-pager',function(){
+              $('.field-name-field-news-slide-show > .field-items').before('<span class="cycle-next cycle-button"></span>');
+              $('.field-name-field-news-slide-show > .field-items').after('<span class="cycle-prev cycle-button"></span>');          
+          });
+        }
+
+        $('.field-name-field-news-slide-show > .field-items').cycle({
+                slides: '> div',
+                swipe: 'true',
+                timeout: 0,
+                prev: '.cycle-prev',
+                next: '.cycle-next'
+        });
+        
+        $('.home-slideshow .view-content').cycle({
+                slides: '> div',
+                swipe: 'true',
+                timeout: 0,
+                prev: '.cycle-prev',
+                next: '.cycle-next'
+        });  
+        
     } // end of attach function
   };
 

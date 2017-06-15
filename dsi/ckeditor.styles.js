@@ -19,6 +19,7 @@ if(typeof(CKEDITOR) !== 'undefined') {
 
             { name : 'Paragraph'		, element : 'p' },
             { name : 'Intro Paragraph'		, element : 'p', attributes : { 'class' : 'intro-text' }  },
+            { name : 'Small Credit'		, element : 'p', attributes : { 'class' : 'credit' }  },
             { name : 'Heading 1'		, element : 'h1' },
             { name : 'Heading 2'		, element : 'h2' },
             { name : 'Heading 3'		, element : 'h3' },
