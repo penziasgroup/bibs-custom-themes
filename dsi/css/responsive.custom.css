@@ -1,0 +1,368 @@
+/*
+ * responsive.custom.css is for custom media queries that are not set via the
+ * theme settings, such as cascading media queries.
+ *
+ * By default all the other responsive stylesheets used in Adaptivetheme use a
+ * "stacking method", however cascading media queries use a waterfall method so
+ * you can leverage the cascade and inheritance for all browsers that support
+ * media queries, regardless of screen size.
+ *
+ * @SEE http://zomigi.com/blog/essential-considerations-for-crafting-quality-media-queries/#mq-overlap-stack
+ *
+ * NOTE: this file loads by default, to disable got to your theme settings and
+ * look under the "CSS" settings tab.
+ */
+
+@media only screen and (min-width: 1400px) {
+    .section-academic-programs #content .block-menu-block{
+        padding-top: 225px;
+    }
+    .square-grid h2.node-title a{
+        padding: 20px 20px 30px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .field-name-field-big-link a, #content .block-menu-block ul.menu li a{
+        padding: 20px;
+        font-size: 30px;
+    }
+    .section-about #content .block-menu-block ul.menu li a{
+        font-size: 26px;
+    }
+    .front .home-panel{
+        padding-top: 100px;
+        padding-bottom: 200px;
+    }
+    .front .field-name-field-headline{
+        font-size: 75px;
+        padding-left: 45px;
+    }
+    .front #content .node-content, .front #content .node-content a{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .front .no-link .field-name-field-content{
+        font-size: 45px;
+        line-height: 48px;
+        padding: 45px 75px;
+    }
+    .front .field-name-field-content{
+        padding: 45px;
+    }
+    .front #content .node-research.node-teaser h2.node-title{
+        padding: 25px 20px;
+    }
+    .people-grid .people-small-content .name-grouping{
+        font-size: 18px;
+        line-height: 22px;
+        padding: 10px 20px;
+    }
+}
+@media only screen and (max-width: 1240px) {
+    .people-grid .views-row{
+        width: 25%;
+    }
+    .people-grid .people-small-content .name-grouping{
+        font-size: 1.6vw;
+        line-height: 2vw; 
+        padding: 1.6vw 2.2vw;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    #logo img{
+        width: 490px;
+    }
+    .burger{
+        font-size: 20px;
+        margin-top: 1px;
+    }
+    .burger img{
+        width: 40px;
+    }
+    #header-wrapper{
+        padding-top: 80px;
+    }
+    #search-glass{
+        margin-top: 1px;
+    }
+    #block-search-form{
+        margin-top: 3px !important;
+    }
+    .node-core-department.node-teaser .field-name-field-dept-image{
+        width: 200px;
+        padding-right: 20px;
+    }
+    .node-core-department.node-teaser h2.node-title{
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .square-grid .views-row{
+        width: 33.33%;
+    }
+    .square-grid h2.node-title a{
+        line-height: 2.1vw;
+        font-size: 1.8vw;
+    }
+    .people-grid .views-row{
+        width: 33.33%;
+    }
+    .people-grid .people-small-content .name-grouping{
+        font-size: 1.9vw;
+        line-height: 2.2vw; 
+    }
+    .node-person .field-name-field-person-image{
+        width: 180px;
+        min-width: 180px;
+    }
+    .node-person .group-name-grouping > div{
+        font-size: 22px;
+    }
+    .node-person .group-name-dept{
+        margin-bottom: 10px;
+    }
+    .node-person .group-person-contact{
+        margin-top: 15px;
+    }
+    .node-type-person .field-name-field-person-image{
+        width: 280px;
+        min-width: 280px;
+    }
+    .node-type-person .group-name-grouping,
+    .node-type-person .group-person-content{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    h1#page-title{
+        font-size: 30px;
+        line-height: 30px;
+    }
+    h1#page-title .section{
+        font-size: 42px;
+        line-height: 42px;
+    }
+}
+@media only screen and (max-width: 860px) {
+    #header-wrapper{
+        padding-top: 60px;
+    }
+    .burger img{
+        width: 36px;
+    }
+    #search-glass img{
+        width: 31px;
+    }
+    #burger-wrap, #search-glass{
+        padding-top: 47px;
+    }
+    #block-search-form{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .region-header{
+        padding-top: 10px;
+    }
+    #burger-wrap{
+        clear: both;
+        margin-right: 15px;
+    }
+    #burger-wrap, #search-glass{
+        padding-top: 15px;
+        float: left;
+    }
+    
+    #footer .block-title{
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+    #footer h3{
+        font-size: 20px;
+    }
+    #footer #block-block-1 .block-content{
+        margin-top: 7px;
+    }
+    #footer #block-block-1 p{
+        font-size: 13px;
+    }
+    #footer #block-menu-block-2,
+    #footer #block-block-2{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .region-leaderboard, #header, #footer, .not-front #columns, .not-front #main-content-header .title-wrap{
+        padding: 0 30px;
+    }
+    .section-academic-programs #content .block-menu-block ul.menu li,
+    .section-about #content .block-menu-block ul.menu li, .section-research #content .block-menu-block ul.menu li{
+        width: 100%;
+        padding-right: 0;
+    }
+    .field-name-field-big-link a, 
+    #content .block-menu-block ul.menu li a,
+    .section-about #content .block-menu-block ul.menu li a{
+        font-size: 16px;
+        line-height: 24px;
+        padding: 13px 20px;
+    }
+    .node-core-department.node-teaser .field-name-field-dept-image{
+        display: none;
+    }
+    .square-grid .views-row{
+        width: 50%;
+    }
+    .square-grid h2.node-title a{
+        line-height: 19px;
+        font-size: 16px;
+    }
+    .people-grid .views-row{
+        width: 50%;
+    }
+    .people-grid .people-small-content .name-grouping{
+        font-size: 2.6vw;
+        line-height: 3.3vw;
+        padding: 2.4vw 3vw;
+    }
+    .node-type-person .node-person .field-name-field-person-image,
+    .node-type-person .node-person .group-person-list-info{
+        display: block;
+    }
+    .node-type-person .node-person .field-name-field-person-image{
+        padding-top: 20px;
+        margin-bottom: 20px;
+        min-width: 0;
+        width: auto;
+    }
+    .node-type-event .group-event-image,
+    .group-date, .group-event-info{
+        display: block;
+    }
+    .node-type-event .group-event-image{
+        max-width: 280px;
+        margin-bottom: 20px;
+    }
+    .group-event-info{
+        width: 100%;
+        padding-left: 0;
+        padding-top: 0;
+    }
+    .node-event.node-teaser .group-date{
+        border-top: 0;
+        width: 100%;
+    }
+    .view-events .attachment-before .group-event-image,
+    .view-events .attachment-before .group-event-info{
+        display: table-cell;
+    }
+    .view-events .attachment-before .group-event-image{
+        width: 200px;
+        min-width: 200px;
+        padding-right: 25px;
+        padding-top: 0;
+    }
+    #footer #block-block-1,
+    #footer #block-block-2,
+    #footer #block-menu-block-2{
+        clear: both;
+        float: none;
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    
+    .front .field-name-field-headline{
+        font-size: 32px;
+        line-height: 33px;
+        margin-bottom: -5px;
+    }
+    .front #content .node-content, .front #content .node-content a{
+        font-size: 16px;
+        line-height: 20px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .front .no-link .field-name-field-content{
+        font-size: 20px;
+        line-height: 22px;
+    }
+    .front .field-type-link-field .field-item,
+    .front .double-link .field-type-link-field .field-item,
+    .front .triple-link .field-type-link-field .field-item{
+        display: block;
+        margin-right: 0;
+        margin-bottom: 5px;
+        width: 100%;
+    }
+    .front #content .node-research.node-teaser h2.node-title, .front #content .node-research.node-teaser h2.node-title a{
+        padding: 7px 10px;
+    }
+    .node-person .field-name-field-person-image, .node-person .group-person-list-info{
+        display: block;
+    }
+    .node-person .field-name-field-person-image{
+        width: auto;
+        min-width: 0;
+        padding-right: 0;
+        max-width: 280px;
+    }
+    .card-content-inner{
+        max-width: 280px;
+    }
+    
+}
+@media only screen and (max-width: 580px){
+    .view-events .attachment-before .group-event-info{
+        display: block;
+    }
+    .view-events .attachment-before .group-event-image{
+        width: auto;
+        min-width: 0;
+        padding-right: 0;
+        padding-top: 0;
+        margin-bottom: 15px;
+        display: block;
+        max-width: 280px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .field-name-field-image-grid-item .field-item{
+        margin-right: 2%;
+        width: 48%;
+    }
+    .people-grid .views-row{
+        width: 100%;
+    }  
+    .people-grid .people-small-content .name-grouping{
+        font-size: 18px;
+        line-height: 24px;
+        padding: 16px 25px;
+    }
+    .card-content-inner .views-field-nothing-1{
+        max-width: 220px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .square-grid .views-row{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .people-grid .people-small-content .name-grouping {
+        font-size: 16px;
+        line-height: 22px;
+        padding: 10px 20px;
+    }
+    h1#page-title {
+        font-size: 26px;
+        line-height: 28px;
+    }
+    h1#page-title .section {
+        font-size: 28px;
+        line-height: 32px;
+    }
+}
+
