@@ -328,6 +328,20 @@
     .group-front-panel-areas > div:last-child{
         margin-bottom: 0;
     }
+    .square-grid.three-grid .views-row,
+    .square-grid.three-grid .views-row:nth-child(3n+3),
+    .square-grid.three-grid .views-row:nth-child(4n+4){
+        width: 49%;
+        margin-right: 1%;
+        margin-bottom: 1%;
+    }
+    .square-grid.three-grid .views-row:nth-child(2n+2){
+        margin-right: 0;
+    }
+    .square-grid.training-cards h2.node-title a{
+        font-size: 20px;
+        padding: 20px;
+    }
 }
 @media only screen and (max-width: 860px) {
     #header-wrapper{
@@ -584,6 +598,15 @@
         float: none;
         width: 100%;
         margin-bottom: 20px;
+    }
+    .square-grid.three-grid .views-row,
+    .square-grid.three-grid .views-row:nth-child(2n+2),
+    .square-grid.three-grid .views-row:nth-child(3n+3),
+    .square-grid.three-grid .views-row:nth-child(4n+4){
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+        margin-right: 0;
     }
 }
 
