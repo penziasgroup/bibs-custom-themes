@@ -96,14 +96,6 @@
     }
 }
 @media only screen and (max-width: 1240px) {
-    .people-grid .views-row{
-        width: 25%;
-    }
-    .people-grid .people-small-content .name-grouping{
-        font-size: 1.6vw;
-        line-height: 2vw; 
-        padding: 1.6vw 2.2vw;
-    }
     #search-glass{
         margin-top: 3px;
     }
