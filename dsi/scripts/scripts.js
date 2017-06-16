@@ -2,8 +2,10 @@
   Drupal.behaviors.genScripts = {
     attach: function (context, settings) {   
         
-    $('#search-glass').click(function(){
-        $('.region-header').slideToggle();
+    $('#search-glass').once('search-expand', function(){
+        $('#search-glass').click(function(){
+            $('.region-header').slideToggle();
+        });
     });
     
      /* =============================================================================
