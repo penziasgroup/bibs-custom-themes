@@ -2076,9 +2076,7 @@ span.addeventatc_icon.atc_node{
     margin-bottom: 35px;
 }
 
-.view .views-exposed-widget select,
-#edit-taxonomy-term-multiple,
-#edit-field-research-theme-tid{
+.view .views-exposed-widget select{
     font-size: 2.13vw;
     padding: 1.1vw;
     padding-right: 35px;
@@ -2092,9 +2090,7 @@ span.addeventatc_icon.atc_node{
     border: 1px solid #fc0d1b;
     border-radius: 0px;
 }
-.view .views-exposed-widget select::-ms-expand,
-#edit-taxonomy-term-multiple::-ms-expand,
-#edit-field-research-theme-tid::-ms-expand{
+.view .views-exposed-widget select::-ms-expand{
     display: none; 
 }
 

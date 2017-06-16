@@ -92,8 +92,7 @@
     .news-listing .date-source{
         margin-top: 30px;
     }
-    .view .views-exposed-widget select,
-    #edit-taxonomy-term-multiple, #edit-field-research-theme-tid{
+    .view .views-exposed-widget select{
         font-size: 30px;
         padding-right: 45px;
     }
@@ -470,8 +469,7 @@
         margin-bottom: 10px;
         margin-left: 0;
     }
-    .view .views-exposed-widget select,
-    #edit-field-news-type-tid, #edit-field-research-theme-tid{
+    .view .views-exposed-widget select{
         padding: 10px 40px 10px 10px;
         font-size: 20px;
     }
