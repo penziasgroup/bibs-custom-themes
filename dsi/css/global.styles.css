@@ -2048,12 +2048,12 @@ span.addeventatc_icon.atc_node{
     background: #fece57;
     color: #000;
 }
-#edit-field-news-type-tid-wrapper{
+#edit-taxonomy-term-multiple{
     padding: 0;
     margin-bottom: 35px;
 }
 
-#edit-field-news-type-tid,
+#edit-taxonomy-term-multiple,
 #edit-field-research-theme-tid{
     font-size: 2.13vw;
     padding: 1.1vw;
@@ -2068,7 +2068,7 @@ span.addeventatc_icon.atc_node{
     border: 1px solid #fc0d1b;
     border-radius: 0px;
 }
-#edit-field-news-type-tid::-ms-expand,
+#edit-taxonomy-term-multiple::-ms-expand,
 #edit-field-research-theme-tid::-ms-expand{
     display: none; 
 }
