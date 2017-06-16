@@ -447,8 +447,8 @@
         margin-left: 0;
     }
     #edit-field-news-type-tid, #edit-field-research-theme-tid{
-        padding: 8px;
-        font-size: 16px;
+        padding: 10px 40px 10px 10px;
+        font-size: 20px;
     }
     .intro-text{
         font-size: 16px;
