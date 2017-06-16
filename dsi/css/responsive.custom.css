@@ -445,7 +445,7 @@
         width: auto;
     }
     .node-type-event .group-event-image,
-    .node-type-postdoc-event .field-name-field-event-date
+    .node-type-postdoc-event .field-name-field-event-date,
     .node-event.node-teaser .group-date, .node-event.node-teaser .group-event-info{
         display: block;
     }
@@ -606,6 +606,13 @@
         width: 100%;
         float: none;
         margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .bibs-now-grid .group-bn-content{
+        height: auto !important;
+    }
+    h1#page-title > span{
+        float: none;
         margin-right: 0;
     }
 }
