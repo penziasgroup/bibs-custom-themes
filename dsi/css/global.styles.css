@@ -1268,11 +1268,11 @@ div.messages ul {
 .front .home-panel > div,
 .not-front #columns,
 .not-front #main-content-header .title-wrap,
-#block-views-home-slides-block{
+#block-views-home-slides-block .view{
     max-width: 1400px;
     margin: auto;
 }
-#block-views-home-slides-block,
+#block-views-home-slides-block .view,
 .region-leaderboard,
 .region-primary-menu,
 .front .home-panel > div,
@@ -2477,6 +2477,7 @@ span.lead-item:last-child{
 #block-views-home-slides-block{
     padding-top: 2.7vw;
     background-color: #bfcbd6;
+    margin-bottom: 0;
 }
 #block-views-home-slides-block .cycle-pager{
     height: 10px;
