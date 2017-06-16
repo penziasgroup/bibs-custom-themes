@@ -130,6 +130,7 @@ function dsi_preprocess_node(&$vars) {
         'news',
         'discover_cards',
         'home_slide',
+        'postdoc_event'
     );
     if ((in_array($vars['type'],$no_titles)) && ($vars['view_mode'] == 'teaser' || $vars['view_mode'] == 'feature_card' || $vars['view_mode'] == 'bibs_now')){
         $vars['title']='';

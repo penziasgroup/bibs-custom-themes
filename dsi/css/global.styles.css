@@ -1803,7 +1803,7 @@ h1#page-title .section-title{
 }
 
 /* Events */
-
+.node-postdoc-event.node-teaser,
 .node-event.node-teaser{
     border-top: 1px solid #ffc72c;
 }
@@ -1814,11 +1814,19 @@ h1#page-title .section-title{
     display: table;
     width: 100%;
 }
+.node-postdoc-event.node-feature-card .node-inner-wrap,
+.node-postdoc-event.node-teaser .node-inner-wrap,
 .node-event.node-feature-card .node-inner-wrap,
 .node-event.node-teaser .node-inner-wrap{
     display: table;
     width: 100%;
 }
+.node-postdoc-event.node-feature-card .group-event-image,
+.node-postdoc-event.node-teaser .group-event-image,
+.node-postdoc-event.node-feature-card  .group-date,
+.node-postdoc-event.node-teaser .group-date,
+.node-postdoc-event.node-feature-card .group-event-info,
+.node-postdoc-event.node-teaser .group-event-info,
 .node-event.node-feature-card .group-event-image,
 .node-event.node-teaser .group-event-image,
 .node-event.node-feature-card  .group-date,
@@ -1829,19 +1837,21 @@ h1#page-title .section-title{
     vertical-align: top;
     padding-top: 10px;
 }
-
+.node-postdoc-event.node-teaser .group-date,
 .node-event.node-teaser .group-date{
     border-top: 5px solid #ed1c24;
     font-size: 20px;
     font-family: opensans-semi;
     width: 22%;
 }
+.node-postdoc-event.node-teaser .group-event-info,
 .node-event.node-teaser .group-event-info{
     padding-left: 60px;
     padding-right: 20px;
     padding-bottom: 25px;
     width: 78%;
 }
+.node-postdoc-event.node-feature-card .group-event-info,
 .node-event.node-feature-card .group-event-info{
     width: 61%;
     padding-left: 15px;
@@ -1851,7 +1861,9 @@ h1#page-title .section-title{
     width: 100%;
     padding-left: 0;
 }
-
+.node-postdoc-event.node-feature-card h2.node-title a,
+.node-postdoc-event.node-teaser h2.node-title,
+.node-postdoc-event.node-teaser h2.node-title a,
 .node-event.node-feature-card h2.node-title a,
 .node-event.node-teaser h2.node-title,
 .node-event.node-teaser h2.node-title a{
@@ -1860,17 +1872,21 @@ h1#page-title .section-title{
     color: #000;
     padding-top: 7px;
 }
+.node-postdoc-event.node-feature-card h2.node-title,
 .node-event.node-feature-card h2.node-title{
     padding-top: 0;
 }
+.node-postdoc-event.node-teaser h2.node-title,
+.node-postdoc-event.node-feature-card h2.node-title,
 .node-event.node-teaser h2.node-title,
 .node-event.node-feature-card h2.node-title{
     margin-bottom: 20px;
 }
-.node-type-event .field-name-field-event-date{
+.node-type-event .field-name-field-event-date,
+.node-type-postdoc-event .field-name-field-event-date{
     font-size: 14px;
 }
-.node-type-event .field-name-field-event-date{
+.node-type-postdoc-event .field-name-field-event-date{
     font-size: 20px;
     font-family: opensans-semi;
 }
@@ -2085,10 +2101,12 @@ span.addeventatc_icon.atc_node{
 
 /* Research Detail */
 .node-type-event .group-event-image,
+.node-type-postdoc-event .group-event-image,
 .node-full .field-name-field-research-image{
     border-bottom: 7px solid #fc0d1b;
 }
 .node-type-event .group-event-image img,
+.node-type-postdoc-event .group-event-image img,
 .node-full .field-name-field-research-image img{
     vertical-align: bottom;
     width: 100%;

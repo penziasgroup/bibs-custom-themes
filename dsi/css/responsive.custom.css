@@ -200,6 +200,7 @@
 @media only screen and (max-width: 980px) {
     .region-content-nav,
     #block-menu-block-4,
+    #block-menu-block-5,
     #primary-menu-wrapper{
         display: none;
     }
@@ -425,11 +426,12 @@
         width: auto;
     }
     .node-type-event .group-event-image,
+    .node-type-postdoc-event .field-name-field-event-date
     .node-event.node-teaser .group-date, .node-event.node-teaser .group-event-info{
         display: block;
     }
-    .node-type-event .group-event-image{
-        max-width: 280px;
+    .node-type-event .group-event-image,
+    .node-type-postdoc-event .group-event-image{
         margin-bottom: 20px;
     }
     .node-event.node-feature-card .group-event-info{
