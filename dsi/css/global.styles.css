@@ -2065,6 +2065,7 @@ span.addeventatc_icon.atc_node{
     -webkit-appearance: none; 
     appearance: none;
     outline: none;
+    border: 1px solid #fc0d1b;
 }
 #edit-field-news-type-tid::-ms-expand,
 #edit-field-research-theme-tid::-ms-expand{
@@ -2503,6 +2504,9 @@ span.lead-item:last-child{
     height: 10px;
     margin-right: 1%;
     cursor: pointer;
+}
+.home-slideshow .view-content .views-row{
+    width: 100%;
 }
 #block-views-home-slides-block .cycle-pager .pager-item.cycle-pager-active{
     background: #e9212d;
