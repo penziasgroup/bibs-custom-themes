@@ -446,21 +446,27 @@
     }
     .node-type-event .group-event-image,
     .node-type-postdoc-event .field-name-field-event-date,
-    .node-event.node-teaser .group-date, .node-event.node-teaser .group-event-info{
+    .node-postdoc-event.node-teaser .group-date,
+    .node-event.node-teaser .group-date,
+    .node-postdoc-event.node-teaser .group-event-info,
+    .node-event.node-teaser .group-event-info{
         display: block;
     }
     .node-type-event .group-event-image,
     .node-type-postdoc-event .group-event-image{
         margin-bottom: 20px;
     }
+    .node-postdoc-event.node-feature-card .group-event-info,
     .node-event.node-feature-card .group-event-info{
         padding-left: 0;
     }
+    .node-postdoc-event.node-teaser .group-event-info,
     .node-event.node-teaser .group-event-info{
         width: 100%;
         padding-left: 0;
         padding-top: 0;
     }
+    .node-postdoc-event.node-teaser .group-date,
     .node-event.node-teaser .group-date{
         border-top: 0;
         width: 100%;
