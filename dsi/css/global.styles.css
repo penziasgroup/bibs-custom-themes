@@ -1400,6 +1400,13 @@ article,
     font-size: 16px;
 }
 
+.region-sidebar-first .block-menu-block ul.menu .separator hr{
+    height: 0;
+    border-top: 1px solid #fd5862;
+    border-bottom: 1px solid #fea4a9;
+    margin: 25px 0;
+}
+
 .section-about #content .block-menu-block ul.menu li a{
     font-size: 1.85vw;
 }
