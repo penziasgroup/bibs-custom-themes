@@ -2065,8 +2065,7 @@ span.addeventatc_icon.atc_node{
 }
 #edit-field-news-type-tid::-ms-expand,
 #edit-field-research-theme-tid::-ms-expand{
-    border: 0;
-    text-indent: -9999px; /* Hides the default arrow */   
+    display: none; 
 }
 
 
