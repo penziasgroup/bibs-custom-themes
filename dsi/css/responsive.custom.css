@@ -346,7 +346,7 @@
     .cycle-button{
         display: none;
     }
-    #block-views-home-slides-block, .region-leaderboard, .region-primary-menu, .front .home-panel > div, #header, #footer, #messages, .not-front #columns, .not-front #main-content-header .title-wrap{
+    #block-views-home-slides-block .view, .region-leaderboard, .region-primary-menu, .front .home-panel > div, #header, #footer, #messages, .not-front #columns, .not-front #main-content-header .title-wrap{
         padding-left: 15px;
         padding-right: 15px;
     }
