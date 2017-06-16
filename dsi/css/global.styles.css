@@ -162,7 +162,19 @@ var {
  */
 /* line 328, ../sass/global.styles.scss */
 #site-name {
-
+    font-size: 56px;
+        letter-spacing: -.5px;
+    font-family: opensans-semi;
+    font-weight: normal;
+    margin-left: -5px;
+    line-height: 1;
+}
+#site-name a{
+    color: #000;
+}
+#site-name .institute{
+    color: #FFF;
+    font-family: opensans-bold;
 }
 /* line 333, ../sass/global.styles.scss */
 #site-name a:link, #site-name a:visited {
@@ -1301,7 +1313,7 @@ article,
 #search-glass{
     cursor: pointer;
     margin-left: 10px;
-    margin-top: 10px;
+    margin-top: 19px;
 }
 #block-search-form{
     margin-bottom: 0;
@@ -1736,7 +1748,10 @@ h1#page-title .section-title{
     width: 220px;
     padding-right: 30px;
 }
-
+.core-dept-list .views-row:first-child{
+    border-top: 1px solid #ffc72c;
+    padding-top: 30px;
+}
 .core-dept-list .views-row{
     margin-bottom: 30px;
     padding-bottom: 30px;
@@ -1746,12 +1761,13 @@ h1#page-title .section-title{
 .node-core-department.node-teaser .group-dept-info{
     padding-right: 25px;
 }
-
-.node-core-department.node-teaser h2.node-title{
+.node-core-department.node-teaser h2.node-title,
+.node-core-department.node-teaser h2.node-title a{
     font-size: 36px;
     line-height: 44px;
     font-family: opensans-semi;
     margin: 0 0 15px;
+    color: #000;
 }
 .node-core-department.node-teaser .field-name-field-dept-website{
     font-size: 18px;
@@ -1999,10 +2015,14 @@ span.addeventatc_icon.atc_node{
     font-size: 1.43vw;
     padding: 1.4vw 2.5vw;
 }
-.square-grid.larger-font h2.node-title{
+.square-grid.larger-font h2.node-title,
+.square-grid.larger-font .group-bottom-grid{
     font-weight: normal;
-    line-height: 1.75vw;
-    font-size: 1.43vw;    
+    line-height: 1.9vw;
+    font-size: 1.36vw;    
+}
+.square-grid.larger-font .group-bottom-grid{
+    padding: 1.4vw 1.4vw 2vw;
 }
 .square-grid.training-cards h2.node-title a{
     font-size: 2.35vw;
@@ -2441,12 +2461,13 @@ span.lead-item:last-child{
 .bibs-now-grid .field-name-field-event-date{
     font-family: opensans-semi;
     font-size: 18px;
+    line-height: 1.5;
 }
 .bibs-now-grid .ctype{
     color: #FFF;
     font-size: 1.7vw;
     font-family: opensans-semi;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 #node-221 .field-name-field-headline{
     color: #fff;
@@ -2455,6 +2476,7 @@ span.lead-item:last-child{
 /* Home Slides */
 #block-views-home-slides-block{
     padding-top: 2.7vw;
+    background-color: #bfcbd6;
 }
 #block-views-home-slides-block .cycle-pager{
     height: 10px;

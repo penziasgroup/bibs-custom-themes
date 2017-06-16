@@ -99,9 +99,6 @@
     }
 }
 @media only screen and (max-width: 1240px) {
-    #search-glass{
-        margin-top: 3px;
-    }
     #logo{
         max-width: 760px;
     }
@@ -110,6 +107,15 @@
     }
     .field-name-field-news-slide-caption p, .node-type-news .group-featured-image .field-name-field-news-featured-caption p{
         margin-bottom: 10px;
+    }
+    #site-name{
+        font-size: 42px;
+    }
+    #search-glass{
+        margin-top: 8px;
+    }
+    #header-wrapper{
+        padding-top: 80px;
     }
 }
 @media only screen and (max-width: 1024px) {
@@ -120,9 +126,6 @@
     }
     .burger img{
         width: 40px;
-    }
-    #header-wrapper{
-        padding-top: 80px;
     }
     #block-search-form{
         margin-top: 3px !important;
@@ -219,12 +222,29 @@
         margin-bottom: 2%;
         margin-right: 2%;
     }
+    .bibs-now-grid .views-row{
+        margin-bottom: 40px;
+    }
     .square-grid.single-row .views-row:nth-child(3n+3){
         margin-right: 2%;
     }
     .square-grid.single-row .views-row:nth-child(2n+2),
     .bibs-now-grid .views-row:nth-child(2n+2){
         margin-right: 0;
+    }
+    #block-views-undergraduates-block h2.block-title{
+        font-size: 26px;
+        margin-bottom: 20px;
+        line-height: 1.25;
+    }
+    .square-grid.larger-font h2.node-title,
+    .square-grid.larger-font .group-bottom-grid{
+        font-weight: normal;
+        line-height: 1.25;
+        font-size: 15px;    
+    }
+    .square-grid.larger-font .group-bottom-grid{
+        padding: 14px 7px;
     }
     .bibs-now-grid .ctype{
         font-size: 16px;
@@ -233,9 +253,9 @@
         float: none;
         width: 100%;
         margin-right: 0;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
-    .discover-grid h2.node-title a{
+    .front #content .discover-grid h2.node-title a{
         font-size: 20px;
     }
     .discover-grid .field-name-field-discover-image{
@@ -248,14 +268,7 @@
     }
     .discover-grid .field-name-field-discover-link a{
         font-size: 16px;
-    }
-    
-}
-@media only screen and (max-width: 860px) {
-    #header-wrapper{
-        padding-top: 60px;
-    }
-    .burger img{
+    }    .burger img{
         width: 36px;
     }
     #search-glass img{
@@ -263,13 +276,6 @@
     }
     #burger-wrap, #search-glass{
         padding-top: 47px;
-    }
-    #block-search-form{
-        width: 100%;
-        box-sizing: border-box;
-    }
-    .region-header{
-        padding-top: 10px;
     }
     #burger-wrap{
         clear: both;
@@ -279,13 +285,47 @@
         padding-top: 15px;
         float: left;
     }
+    #block-search-form{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    #block-views-home-slides-block .cycle-pager,
+    #block-views-home-slides-block .cycle-pager .pager-item{
+        height: 5px;
+    }
+    .front #content .bibs-now-grid h2.node-title a{
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    .front #content .square-grid.training-cards h2.node-title a{
+        font-size: 26px;
+        padding: 20px 15px;
+        line-height: 1.25;
+    }
+    .square-grid .group-bottom-grid, .square-grid h2.node-title a{
+        padding: 15px;
+    }
     
+}
+@media only screen and (max-width: 860px) {
+    #header-wrapper{
+        padding-top: 60px;
+    }
+    .region-header{
+        padding-top: 10px;
+    }
+    #site-name{
+        font-size: 46px;
+    }
+    #site-name .mobile-break{
+        display: block;
+    }
     #footer .block-title{
         font-size: 25px;
         margin-bottom: 0;
     }
     #footer h3{
-        font-size: 20px;
+        font-size: 18px;
     }
     #footer #block-block-1 .block-content{
         margin-top: 7px;
@@ -519,6 +559,13 @@
 @media only screen and (max-width: 420px) {
     .square-grid .views-row{
         width: 100%;
+    }
+    #site-name{
+        font-size: 32px;
+        line-height: 1.2;
+    }
+    #header-wrapper{
+        padding-top: 45px;
     }
 }
 
