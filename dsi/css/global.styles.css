@@ -2481,8 +2481,12 @@ span.lead-item:last-child{
 .bibs-now-grid .ctype{
     color: #FFF;
     font-size: 1.7vw;
-    font-family: opensans-semi;
+    font-family: opensans-light;
     margin-bottom: 5px;
+}
+.bibs-now-grid .ctype strong{
+    font-family: opensans-semi;
+    text-transform: uppercase;
 }
 #node-221 .field-name-field-headline{
     color: #fff;
