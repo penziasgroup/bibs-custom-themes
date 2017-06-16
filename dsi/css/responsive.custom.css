@@ -30,7 +30,7 @@
         line-height: 1.25;
     }
     .square-grid.training-cards h2.node-title a{
-        font-size: 36px;
+        font-size: 34px;
         line-height: 1;
         padding: 30px 35px;
     }
@@ -58,6 +58,42 @@
         font-weight: normal;
         margin-bottom: 25px;
     }
+    .region-primary-menu nav ul.menu li{
+        font-size: 23px; 
+    }
+    .region-primary-menu nav ul.menu li a{
+        padding: 35px 0;
+    }
+    .node-home-slide h2.node-title a{
+        font-size: 48px;
+    }
+    .node-home-slide h2.node-title{
+        margin-bottom: 35px;
+    }
+    #block-views-home-slides-block{
+        padding-top: 40px;
+    }
+    .front .field-name-field-headline {
+        font-size: 60px;
+        margin-bottom: 35px;
+    }
+    .discover-grid .field-name-field-discover-subtitle,
+    .bibs-now-grid h2.node-title a{
+        font-size: 30px;
+    }
+    .bibs-now-grid .ctype{
+        font-size: 24px;
+    }
+    .discover-grid h2.node-title a{
+        font-size: 36px;
+    }
+    .news-listing .date-source{
+        margin-top: 30px;
+    }
+    #edit-field-news-type-tid, #edit-field-research-theme-tid{
+        font-size: 30px;
+        padding: 15px;
+    }
 }
 @media only screen and (max-width: 1240px) {
     .people-grid .views-row{
@@ -68,11 +104,15 @@
         line-height: 2vw; 
         padding: 1.6vw 2.2vw;
     }
+    #search-glass{
+        margin-top: 3px;
+    }
+    #logo{
+        max-width: 760px;
+    }
 }
 @media only screen and (max-width: 1024px) {
-    #logo img{
-        width: 490px;
-    }
+
     .burger{
         font-size: 20px;
         margin-top: 1px;
@@ -82,9 +122,6 @@
     }
     #header-wrapper{
         padding-top: 80px;
-    }
-    #search-glass{
-        margin-top: 1px;
     }
     #block-search-form{
         margin-top: 3px !important;
@@ -140,6 +177,27 @@
     h1#page-title .section{
         font-size: 42px;
         line-height: 42px;
+    }
+}
+@media only screen and (max-width: 980px) {
+    .region-content-nav,
+    #block-menu-block-4,
+    #primary-menu-wrapper{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    #search-glass{
+        margin-top: 0;
+        margin-right: 15px;
+    }
+    #logo{
+        max-width: 550px;
+        margin-top: 3px;
+    }
+    .sidebar-first #content-column .content-inner{
+        padding-left: 0;
     }
 }
 @media only screen and (max-width: 860px) {
@@ -237,14 +295,17 @@
         width: auto;
     }
     .node-type-event .group-event-image,
-    .group-date, .group-event-info{
+    .node-event.node-teaser .group-date, .node-event.node-teaser .group-event-info{
         display: block;
     }
     .node-type-event .group-event-image{
         max-width: 280px;
         margin-bottom: 20px;
     }
-    .group-event-info{
+    .node-event.node-feature-card .group-event-info{
+        padding-left: 0;
+    }
+    .node-event.node-teaser .group-event-info{
         width: 100%;
         padding-left: 0;
         padding-top: 0;
@@ -270,6 +331,13 @@
         float: none;
         margin-bottom: 10px;
         margin-left: 0;
+    }
+    #edit-field-news-type-tid, #edit-field-research-theme-tid{
+        padding: 8px;
+        font-size: 16px;
+    }
+    .intro-text{
+        font-size: 16px;
     }
 }
 
@@ -327,6 +395,18 @@
         margin-bottom: 15px;
         display: block;
         max-width: 280px;
+    }
+    .news-listing .news-image,
+    .news-listing .news-content{
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+    .news-listing .news-image{
+        margin-bottom: 10px;
+    }
+    .news-listing .news-image img{
+        width: 100%;
     }
 }
 

@@ -1263,6 +1263,7 @@ div.messages ul {
 #block-views-home-slides-block,
 .region-leaderboard,
 .region-primary-menu,
+.front .home-panel > div,
 #header,
 #footer,
 #messages,
@@ -1448,8 +1449,8 @@ article,
     float: right;
 }
 .front .field-name-field-headline{
-    font-size: 60px;
-    margin-bottom: 35px;
+    font-size: 4.3vw;
+    margin-bottom: 2.7vw;
 }
 .front .field-name-field-content{
     font-size: 20px;
@@ -1462,8 +1463,15 @@ article,
     background-color: #ed1c24;
     color: #FFF;
 }
+.front .red .square-grid .views-row:hover article:before{
+    background-color: #fec540;
+}
 .front .green{
     background-color: #fec540;
+}
+.front .green .square-grid .views-row:hover h2.node-title a{
+    background-color: #ed1c24;
+    color: #FFF;
 }
 .front .view-reference .field-name-field-content{
     margin-bottom: 35px;
@@ -1493,12 +1501,12 @@ article,
     color: #FFF;
     background: #000;
     display: block;
-    font-size: 36px;
+    font-size: 2.56vw;
     font-weight: normal;
     padding: 12px 20px;
 }
 .discover-grid .field-name-field-discover-subtitle{
-    font-size: 30px;
+    font-size: 2.15vw;
     font-family: opensans-semi;
     margin-bottom: 10px;
 }
@@ -1941,6 +1949,11 @@ span.addeventatc_icon.atc_node{
 }
 
 /* Affliated Grid & Research Grid */
+#block-views-undergraduates-block h2.block-title{
+    font-size: 2.6vw;
+    margin-bottom: 1.75vw;
+    font-weight: normal;
+}
 .square-grid .view-content:after{
     content: '';
     display: block;
@@ -1955,7 +1968,14 @@ span.addeventatc_icon.atc_node{
     margin-bottom: 8px;
 }
 .square-grid.three-grid .views-row{
-    width: 33.33%;
+    width: 33%;
+    margin-right: .5%;
+    margin-bottom: .5%;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+.square-grid.three-grid .views-row:nth-child(3n+3){
+    margin-right: 0;
 }
 .square-grid .views-row img{
     display: block;
@@ -1971,6 +1991,16 @@ span.addeventatc_icon.atc_node{
     line-height: 1.75vw;
     font-size: 1.43vw;
     padding: 1.4vw 2.5vw;
+}
+.square-grid.larger-font h2.node-title{
+    font-weight: normal;
+    line-height: 1.75vw;
+    font-size: 1.43vw;    
+}
+.square-grid.training-cards h2.node-title a{
+    font-size: 2.35vw;
+    padding: 2vw;
+    line-height: 1.25;
 }
 .square-grid .node-inner-wrap{
     position: relative;
@@ -1998,8 +2028,8 @@ span.addeventatc_icon.atc_node{
 
 #edit-field-news-type-tid,
 #edit-field-research-theme-tid{
-    font-size: 30px;
-    padding: 15px;
+    font-size: 2.13vw;
+    padding: 1.1vw;
 }
 
 /* Research Detail */
@@ -2199,7 +2229,7 @@ span.lead-item:last-child{
 }
 .news-listing .date-source{
     font-family: opensans-semi;
-    margin-top: 30px;
+    margin-top: 2.2vw;
 }
 .news-listing .date-source > span:after{
     content: '. ';
@@ -2342,7 +2372,7 @@ span.lead-item:last-child{
 .region-primary-menu nav ul.menu li{
     display: inline-block;
     width: 16%;
-    font-size: 23px;
+    font-size: 1.64vw;
     line-height: 1;
     font-family: opensans-semi;
 }
@@ -2357,7 +2387,7 @@ span.lead-item:last-child{
 .region-primary-menu nav ul.menu li a{
     color: #000;
     display: block;
-    padding: 35px 0;
+    padding: 2.5vw 0;
 }
 .region-primary-menu nav ul.menu li a:hover,
 .region-primary-menu nav ul.menu li a.active,
@@ -2373,7 +2403,7 @@ span.lead-item:last-child{
 }
 .bibs-now-grid .views-row{
     float: left;
-    width: 24.438%;
+    width: 24.43%;
     margin-right: .75%;
 }
 .bibs-now-grid .views-row:last-child{
@@ -2388,12 +2418,12 @@ span.lead-item:last-child{
 }
 .bibs-now-grid h2.node-title a{
     color: #000;
-    font-size: 30px;
+    font-size: 2.125vw;
     font-family: opensans-semi;
     line-height: 1.3;
 }
 .bibs-now-grid .group-bn-content{
-    
+    padding-right: 15px;
 }
 .bibs-now-grid .field-name-field-event-date{
     font-family: opensans-semi;
@@ -2401,7 +2431,7 @@ span.lead-item:last-child{
 }
 .bibs-now-grid .ctype{
     color: #FFF;
-    font-size: 24px;
+    font-size: 1.7vw;
     font-family: opensans-semi;
     margin-bottom: 10px;
 }
@@ -2411,14 +2441,32 @@ span.lead-item:last-child{
 
 /* Home Slides */
 #block-views-home-slides-block{
-    padding-top: 40px;
+    padding-top: 2.7vw;
+}
+#block-views-home-slides-block .cycle-pager{
+    height: 10px;
+}
+#block-views-home-slides-block .cycle-pager .pager-item{
+    display: inline-block;
+    vertical-align: top;
+    width: 32.66%;
+    background: #97a3ad;
+    height: 10px;
+    margin-right: 1%;
+    cursor: pointer;
+}
+#block-views-home-slides-block .cycle-pager .pager-item.cycle-pager-active{
+    background: #e9212d;
+}
+#block-views-home-slides-block .cycle-pager .pager-item:last-child{
+    margin-right: 0;
 }
 .node-home-slide h2.node-title{
-    margin-bottom: 40px;
+    margin-bottom: 2.5vw;
 }
 .node-home-slide h2.node-title a{
     color: #000;
-    font-size: 48px;
+    font-size: 3.43vw;
     font-family: opensans-semi;
 }
 .node-home-slide img{

@@ -66,13 +66,18 @@
                 next: '.cycle-next'
         });
         
+        if($('.home-slideshow .view-content').children().length > 1){
+          $('.home-slideshow .view-content').once('slider-pager',function(){
+              $('.field-name-field-home-slide-image').before('<div class="cycle-pager"></div>');        
+          });
+        }
         $('.home-slideshow .view-content').cycle({
                 slides: '> div',
                 swipe: 'true',
                 timeout: 0,
-                prev: '.cycle-prev',
-                next: '.cycle-next'
-        });  
+                pager: '.cycle-pager',
+                pagerTemplate: '<span class="pager-item"></span>',
+        });
         
     } // end of attach function
   };
