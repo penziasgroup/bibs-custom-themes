@@ -590,6 +590,10 @@
 @media only screen and (max-width: 420px) {
     .square-grid .views-row{
         width: 100%;
+        margin-bottom: 20px;
+    }
+    .square-grid .views-row:nth-child(4n+4), .square-grid .views-row:nth-child(3n+3){
+        margin-bottom: 20px;
     }
     #site-name{
         font-size: 32px;
