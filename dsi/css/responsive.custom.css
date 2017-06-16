@@ -84,6 +84,8 @@
     .bibs-now-grid .ctype{
         font-size: 24px;
     }
+    .group-front-panel-areas h2,
+    .group-front-panel-areas h2 a,
     .discover-grid h2.node-title a{
         font-size: 36px;
     }
@@ -256,6 +258,11 @@
         margin-right: 0;
         margin-bottom: 40px;
     }
+    .front #content .group-front-panel-areas{
+        font-size: 16px;
+    }
+    .front #content .group-front-panel-areas h2,
+    .front #content .group-front-panel-areas h2 a,
     .front #content .discover-grid h2.node-title a{
         font-size: 20px;
     }
@@ -306,7 +313,15 @@
     .square-grid .group-bottom-grid, .square-grid h2.node-title a{
         padding: 15px;
     }
-    
+    .group-front-panel-areas > div{
+        float: none;
+        width: 100%;
+        margin-bottom: 40px;
+        margin-right: 0;
+    }
+    .group-front-panel-areas > div:last-child{
+        margin-bottom: 0;
+    }
 }
 @media only screen and (max-width: 860px) {
     #header-wrapper{
@@ -474,6 +489,7 @@
     .front .field-name-field-headline{
         font-size: 32px;
         line-height: 33px;
+        margin-bottom: 30px;
     }
     .front #content .node-content, .front #content .node-content a{
         font-size: 16px;

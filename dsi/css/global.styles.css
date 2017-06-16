@@ -2532,3 +2532,32 @@ span.lead-item:last-child{
 .node-home-slide img{
     vertical-align: bottom;
 }
+
+/* Left Area Right Area Home Panel */
+.group-front-panel-areas:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.group-front-panel-areas > div{
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+}
+.group-front-panel-areas > div:last-child{
+    margin-right: 0;
+}
+.group-front-panel-areas{
+    font-size: 20px;
+}
+.group-front-panel-areas h2,
+.group-front-panel-areas h2 a{
+    font-size: 2.56vw;
+    font-family: opensans;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.group-front-panel-areas a{
+    color: #000;
+}
