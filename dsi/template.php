@@ -135,7 +135,7 @@ function dsi_preprocess_node(&$vars) {
     if ((in_array($vars['type'],$no_titles)) && ($vars['view_mode'] == 'teaser' || $vars['view_mode'] == 'feature_card' || $vars['view_mode'] == 'bibs_now')){
         $vars['title']='';
     }
-    if($vars['view_mode'] == 'full' && $vars['type'] == 'news'){
+    if($vars['view_mode'] == 'full' && ($vars['type'] == 'news' || $vars['type'] == 'postdoc_news')){
         if(!empty($vars['content']['field_news_video']) || !empty($vars['content']['field_news_slide_show'])){
             unset($vars['elements']['#fieldgroups']['group_featured_image']);
             hide($vars['content']['field_news_featured_image']);
