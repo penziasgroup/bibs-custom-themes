@@ -81,6 +81,7 @@
     scripts[] = scripts/brown-header-footer.js
     scripts[] = scripts/jcarousel.min.js
     scripts[] = scripts/jquery.cycle2.min.js
+    scripts[] = scripts/jquery.cycle2.swipe.min.js
     scripts[] = scripts/matchHeight.js
     scripts[] = scripts/scripts.js
     scripts[] = scripts/ate.min.js  

@@ -6,11 +6,16 @@
   
   Drupal.behaviors.equalHeights = {
     attach: function (context, settings) {
-
+        $('.field-name-field-news-slide-caption, .node-type-news .group-featured-image .field-name-field-news-featured-caption').matchHeight({   
+            byRow: false
+        });
         $('.square-grid article h2.node-title a').matchHeight({   
             byRow: false
         });
         $('.square-grid article .group-bottom-grid').matchHeight({   
+            byRow: false
+        });
+        $('.bibs-now-grid .group-bn-content').matchHeight({
             byRow: false
         });
         $('.people-grid .views-field-field-person-image').matchHeight({           
