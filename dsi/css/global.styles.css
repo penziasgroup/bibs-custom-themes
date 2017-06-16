@@ -1693,6 +1693,7 @@ h1#page-title .section-title{
 }
 .node-person .field-name-field-person-image img{
     display: block;
+    width: 100%;
 }
 .node-person .group-name-dept{
     margin: 15px 0 20px;
