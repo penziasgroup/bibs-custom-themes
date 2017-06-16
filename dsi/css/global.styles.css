@@ -2066,6 +2066,7 @@ span.addeventatc_icon.atc_node{
     appearance: none;
     outline: none;
     border: 1px solid #fc0d1b;
+    border-radius: 0px;
 }
 #edit-field-news-type-tid::-ms-expand,
 #edit-field-research-theme-tid::-ms-expand{
