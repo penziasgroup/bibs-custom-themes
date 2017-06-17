@@ -515,6 +515,9 @@
     .node-type-news .group-featured-image .field-name-field-news-featured-image img{
         width: 100%;
     }
+    .node-core-department.node-teaser .field-name-body{
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 620px) {
