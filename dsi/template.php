@@ -150,6 +150,20 @@ function dsi_preprocess_views_view(&$vars) {
     }
 }
 
+function dsi_preprocess_field(&$vars, $hook){
+    $field_name = $vars['element']['#field_name'];
+    $view_mode = $vars['field_view_mode'];
+    
+    if($view_mode == 'bibs_now' && $field_name == 'field_news_featured_image'){
+        $node = $vars['element']['#object'];
+        $node_url = 'node/' . $node->nid;
+        $path_alias = drupal_get_path_alias($node_url);
+        if(empty($vars['items'][0]['#path']['path'])){
+            $vars['items'][0]['#path']['path'] = $path_alias;            
+        }
+    } 
+}
+
 /* -- Delete this line if you want to use these functions
 function dsi_process_node(&$vars) {
 }
