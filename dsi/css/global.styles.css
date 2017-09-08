@@ -2528,7 +2528,8 @@ span.lead-item:last-child{
 
 /* Home Slides */
 #block-views-home-slides-block{
-    padding-top: 2.7vw;
+    padding-top: 0;
+    padding-bottom: 2.7vw;
     background-color: #eaecee;
     margin-bottom: 0;
 }
@@ -2554,12 +2555,23 @@ span.lead-item:last-child{
     margin-right: 0;
 }
 .node-home-slide h2.node-title{
-    margin-bottom: 2.5vw;
+    position: absolute;
+    z-index: 100;
+    background-color: rgba(0,0,0,.75);
+    right: 1px;
+    bottom: 3.2vw;
+    margin-bottom: 0;
+    padding: 15px 35px 15px 15px;
+    box-sizing: border-box;
+    max-width: 670px;
+    line-height: 1.25;
 }
 .node-home-slide h2.node-title a{
     color: #000;
     font-size: 3.43vw;
     font-family: opensans-semi;
+    color: #FFF;
+    margin-bottom: 0;
 }
 .node-home-slide img{
     vertical-align: bottom;

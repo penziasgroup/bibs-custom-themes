@@ -70,7 +70,7 @@
         
         if($('.home-slideshow .view-content').children().length > 1){
           $('.home-slideshow .view-content').once('slider-pager',function(){
-              $('.field-name-field-home-slide-image').before('<div class="cycle-pager"></div>');        
+              $('.group-slide-container').after('<div class="cycle-pager"></div>');        
           });
         }
         $('.home-slideshow .view-content').cycle({

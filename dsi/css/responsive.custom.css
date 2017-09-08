@@ -67,11 +67,12 @@
     .node-home-slide h2.node-title a{
         font-size: 48px;
     }
-    .node-home-slide h2.node-title{
-        margin-bottom: 35px;
-    }
     #block-views-home-slides-block{
-        padding-top: 40px;
+        padding-top: 0px;
+        padding-bottom: 40px;
+    }
+    .node-home-slide h2.node-title{
+        bottom: 45px;
     }
     .front .field-name-field-headline {
         font-size: 60px;
@@ -387,7 +388,7 @@
         padding-right: 15px;
     }
     #block-views-home-slides-block{
-        padding-top: 35px;
+        padding-bottom: 35px;
     }
     .region-content-nav .block-menu-block ul.menu li,
     .section-academic-programs #content .block-menu-block ul.menu li,
@@ -533,7 +534,6 @@
         font-size: 28px;
         line-height: 40px;
     }
-    .front #content .node-home-slide h2.node-title a,
     .front .field-name-field-headline{
         font-size: 32px;
         line-height: 33px;
@@ -567,6 +567,13 @@
     }
     .card-content-inner{
         max-width: 280px;
+    }
+    .node-home-slide h2.node-title{
+        padding: 5px;
+        max-width: none;
+    }
+    .front #content .node-home-slide h2.node-title a{
+        font-size: 12px;
     }
     
 }
@@ -646,7 +653,7 @@
         margin-bottom: 20px;
     }
     #site-name{
-        font-size: 32px;
+        font-size: 30px;
         line-height: 1.2;
     }
     #header-wrapper{
