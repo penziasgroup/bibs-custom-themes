@@ -603,6 +603,13 @@
     .news-listing .news-image img{
         width: 100%;
     }
+    #block-views-home-slides-block{
+        padding: 20px 0;
+    }
+    #block-views-home-slides-block .view{
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 @media only screen and (max-width: 480px) {
