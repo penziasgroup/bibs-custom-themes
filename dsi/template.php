@@ -109,6 +109,12 @@ function dsi_preprocess_node(&$vars) {
             $vars['classes_array'][] = t('home-panel');
         
     }
+    if($vars['type'] == 'home_slide' && $vars['view_mode'] == 'teaser'){
+        if(!empty($vars['field_text_alignment'])){
+                $alignment = $vars['field_text_alignment'][LANGUAGE_NONE][0]['value'];
+                $vars['classes_array'][] = $alignment;
+            }
+    }
     if($vars['type'] == 'event' && ($vars['view_mode'] == 'default' || $vars['view_mode'] == 'full')){
         if(empty($vars['field_event_image'])){
             $vars['classes_array'][] = t('no-image');

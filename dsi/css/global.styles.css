@@ -2558,13 +2558,17 @@ span.lead-item:last-child{
     position: absolute;
     z-index: 100;
     background-color: rgba(0,0,0,.75);
-    right: 1px;
+    right: 0px;
     bottom: 3.2vw;
     margin-bottom: 0;
     padding: 15px 35px 15px 15px;
     box-sizing: border-box;
     max-width: 670px;
     line-height: 1.25;
+}
+.node-home-slide.left h2.node-title{
+    right: initial;
+    left: 0;
 }
 .node-home-slide h2.node-title a{
     color: #000;
