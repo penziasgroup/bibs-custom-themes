@@ -162,7 +162,7 @@ var {
  */
 /* line 328, ../sass/global.styles.scss */
 #site-name {
-    font-size: 56px;
+    font-size: 48px;
         letter-spacing: -.5px;
     font-family: opensans-semi;
     font-weight: normal;
@@ -1294,8 +1294,8 @@ article,
 
 #header-wrapper{
     background-color: #ed1c24;
-    padding-top: 100px;
-    padding-bottom: 30px;
+    padding-top: 70px;
+    padding-bottom: 20px;
 }
 
 #branding{
@@ -1313,7 +1313,7 @@ article,
 #search-glass{
     cursor: pointer;
     margin-left: 10px;
-    margin-top: 19px;
+    margin-top: 11px;
 }
 #block-search-form{
     margin-bottom: 0;
@@ -2434,10 +2434,7 @@ span.lead-item:last-child{
 }
 
 #primary-menu-wrapper{
-    background-image: url(images/bottom-menu.png);
-    padding-bottom: 18px;
-    background-position: bottom;
-    background-repeat: repeat-x;
+    border-bottom: 4px solid #ed1c24;
 }
 
 .region-primary-menu nav,
@@ -2463,7 +2460,7 @@ span.lead-item:last-child{
 .region-primary-menu nav ul.menu li a{
     color: #000;
     display: block;
-    padding: 2.5vw 0;
+    padding: 3vw 0 1.5vw;
 }
 .region-primary-menu nav ul.menu li a:hover,
 .region-primary-menu nav ul.menu li a.active,
