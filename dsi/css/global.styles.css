@@ -1457,8 +1457,8 @@ article,
     font-size: 14px;
 }
 .front .home-panel{
-    padding-top: 7vw;
-    padding-bottom: 14vw;
+    padding-top: 3.5vw;
+    padding-bottom: 7vw;
 }
 .front .home-panel.no-link{
     padding-bottom: 0;
