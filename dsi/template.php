@@ -66,7 +66,7 @@ function dsi_preprocess_page(&$vars) {
        drupal_set_title('');
     }
     if(isset($vars['node']) && $vars['node']->type == 'brain_factor'){
-       drupal_set_title('Brain Factor');
+       drupal_set_title('Brain Fact');
     }
     if(isset($vars['node']) && $vars['node']->type == 'tool'){
        drupal_set_title('Toolbox');
