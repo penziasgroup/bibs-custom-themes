@@ -2253,10 +2253,12 @@ span.lead-item:last-child{
 
 /* Funding */
 
+.funding-list .views-field-title,
 .funding-list h2.node-title{
     font-size: 36px;
     font-family: opensans-semi;
 }
+.funding-list .views-field-view-node,
 .funding-list .field-name-field-funding-url{
     font-size: 18px;
     font-family: opensans-semi;
