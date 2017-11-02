@@ -24,6 +24,7 @@
         line-height: 20px;
     }
     .square-grid.larger-font h2.node-title,
+    .square-grid.larger-font h2.node-title a,
     .square-grid .group-bottom-grid{
         font-size: 18px;
         font-weight: normal;

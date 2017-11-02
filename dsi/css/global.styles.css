@@ -2040,10 +2040,18 @@ span.addeventatc_icon.atc_node{
     padding: 1.4vw 2.5vw;
 }
 .square-grid.larger-font h2.node-title,
+.square-grid.larger-font h2.node-title a,
 .square-grid.larger-font .group-bottom-grid{
     font-weight: normal;
     line-height: 1.9vw;
     font-size: 1.36vw;    
+}
+.square-grid.larger-font h2.node-title a{
+    padding: 0;
+}
+.square-grid.larger-font .views-row:hover h2.node-title a{
+    color: #FFF;
+    background-color: #000;
 }
 .square-grid.larger-font .group-bottom-grid{
     padding: 1.4vw 1.4vw 2vw;
