@@ -220,7 +220,7 @@ if(isset($section_title)){
             <!-- start: Branding -->
             <div<?php print $branding_attributes; ?>>
                 
-                <div id="site-name"><a href="/" title="home">BROWN INSTITUTE <span class="mobile-break">for <span class="institute">BRAIN SCIENCE</span></span></a></div>  
+                <div id="site-name"><a href="<?php print $front_page; ?>" title="home">BROWN INSTITUTE <span class="mobile-break">for <span class="institute">BRAIN SCIENCE</span></span></a></div>  
               
               <?php if ($site_logo): ?>
                 <div id="logo">
